@@ -48,7 +48,7 @@ const getUserQueue = (user_id) => {
         await Task(user_id);                             // For requests who meet above criteria ,call Task function.
       } catch (rateLimiterRes) {
         // If rate limiting is hit, wait for the necessary time before retrying
-        const msBeforeNext = rateLimiterRes.msBeforeNext || 1000;  
+        const msBeforeNext = rateLimiterRes.msBeforeNext;  
         await new Promise((resolve) => setTimeout(resolve, msBeforeNext)); // Delay processing
 
         // Re-add the task to the user's queue for later execution
