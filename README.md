@@ -15,7 +15,7 @@ This Node.js project implements a rate-limiting and task-queuing system using Re
 - **Express.js**: Web framework for building APIs.
 - **Redis**: In-memory data store used for rate limiting and task queue management.
 - **Bull**: Redis-backed job queue for handling asynchronous tasks.
-- **rate-limiter-flexible**: Library used to implement flexible rate limiting rules.
+- **rate-limiter-flexible**: Library used to implement flexible rate limiting rules
 - **dotenv**: To manage environment variables.
 
 ## Getting Started
